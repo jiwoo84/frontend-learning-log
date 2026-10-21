@@ -64,3 +64,11 @@ console.log("F");
 - [MDN: 마이크로태스크와 태스크](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
 - [MDN: Promise 생성자](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)
 - [MDN: Promise.then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+
+## 마무리 후 추가 확인 — 2026-10-21
+
+then에 전달해 나중에 호출되는 함수를 콜백이라고 부른다는 점을 설명했다. 사용자는 매크로태스크 큐도 한 번에 모두 비우는지 질문했다. 첫 번째 타이머가 Promise 콜백을 예약하고 두 번째 타이머가 대기하는 예제로, 태스크 하나가 끝날 때마다 마이크로태스크를 모두 처리함을 설명했다.
+
+사용자 최종 정리 요약: 첫 번째 타이머에서 타이머 1을 출력하고 then 콜백을 마이크로태스크로 예약한다. 첫 번째 태스크가 끝나면 마이크로를 출력하고, 다음 태스크에서 타이머 2를 출력한다.
+
+피드백: 흐름과 이유가 정확하다. 설명과 출력 순서를 제공한 뒤의 자기 설명이므로 추가 독립 적용이나 지연 복습 성공으로 집계하지 않는다. 해당 두 타이머 예제는 실행 검증하지 않았다. 사용자가 학습 종료를 명시했으며 다음 주제와 복습 예정일은 유지한다.
