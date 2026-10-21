@@ -14,9 +14,9 @@
 
 ## 현재 순서
 
-1. JavaScript 실행 순서: 동기 코드, Promise, 타이머
-2. async/await와 오류 처리
-3. 스코프와 클로저를 거쳐 React state/ref 학습 내용 재확인
+1. JavaScript 실행 순서: 동기 코드, Promise, 타이머 — 기본 학습 마무리
+2. async/await와 오류 처리 — 기본 학습 마무리
+3. 다음 학습: 스코프와 클로저를 거쳐 React state/ref 학습 내용 재확인
 4. 복습 결과와 선행 개념을 바탕으로 다음 필수 영역 선정
 
 ## 심화로 넘어가는 기준
