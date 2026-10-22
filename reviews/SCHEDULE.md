@@ -14,6 +14,7 @@
 | html-button-link | [button·a와 키보드 접근성](../notes/html/button-link-keyboard.md) | 2026-10-21 요소 선택 및 설명 후 키보드 동작 자기 정리. Shift + Tab 보완·독립 적용과 지연 유지 미확인 | — | — | 1일 | 2026-10-22 | 0 / 0 |
 | browser-events | [이벤트 전파·기본 동작](../notes/browser/event-propagation-and-defaults.md) | 2026-10-21 버블링 예측 및 설명 후 두 메서드 차이 자기 정리. 독립 적용·지연 유지 미확인 | — | — | 1일 | 2026-10-22 | 0 / 0 |
 | http-fetch | [HTTP 요청·응답과 fetch](../notes/http/requests-responses-and-fetch.md) | 2026-10-22 GET·500 비자동 거부 자기 설명, 본문 읽기·변환 표현 피드백 후 이해. 독립 적용·지연 유지 미확인 | — | — | 1일 | 2026-10-23 | 0 / 0 |
+| ts-narrowing | [TypeScript 추론·유니온·좁히기](../notes/typescript/inference-unions-and-narrowing.md) | 2026-10-22 유니온·정적 검사·return 흐름 설명, 좁히기 목적 최종 피드백. 독립 적용·지연 유지 미확인 | — | — | 1일 | 2026-10-23 | 0 / 0 |
 
 ## 확인할 오개념
 
@@ -26,6 +27,7 @@
 | html-button-link | 버튼 조작을 input/form 연결과 관련지어 설명해 폼 밖 조작을 보완. Shift 단독 표현은 Shift + Tab으로 교정 | 미평가 | 동작과 이동, 포커스와 실행, 버튼·링크 실행 키 차이 확인 |
 | browser-events | 리스너가 퍼짐·부모 이벤트가 발생하지 않음이라는 표현을 현재 이벤트 전파로 보완. 핵심 구분은 정확 | 미평가 | 버블링 순서와 전파 중단·기본 동작 취소를 구분하는지 확인 |
 | http-fetch | 500을 통신 실패로 보는 이해 교정, json()의 본문 읽기와 JSON 텍스트 → JavaScript 값 구분 보완 | 미평가 | HTTP 상태와 Promise 거부, 두 await의 대기 대상·본문 소비 확인 |
+| ts-narrowing | JS 동적 타입과 TS 추론 혼동 보완. 최종 좁히기 목적은 값 차단보다 위치별 타입 판단·안전한 연산이라는 피드백 제공 | 미평가 | return 유무에 따른 타입 판단, 조건 분기와 타입 좁히기 구분. 용어 재설명을 기억 실패로 단정하지 않음 |
 
 기존 진단 답변을 정식 복습 점수로 소급 집계하지 않았다. 위 주제는 다음 복습 요청 시 기존 학습 범위 안에서 확인할 수 있다. 첫 유효 복습에서 3점이면 3일, 2점이면 1일, 0·1점이면 교정 후 1일을 시작 간격으로 사용한다.
 
