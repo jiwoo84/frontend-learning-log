@@ -16,6 +16,7 @@
 | http-fetch | [HTTP 요청·응답과 fetch](../notes/http/requests-responses-and-fetch.md) | 2026-10-22 GET·500 비자동 거부 자기 설명, 본문 읽기·변환 표현 피드백 후 이해. 독립 적용·지연 유지 미확인 | — | — | 1일 | 2026-10-23 | 0 / 0 |
 | ts-narrowing | [TypeScript 추론·유니온·좁히기](../notes/typescript/inference-unions-and-narrowing.md) | 2026-10-22 유니온·정적 검사·return 흐름 설명, 좁히기 목적 최종 피드백. 독립 적용·지연 유지 미확인 | — | — | 1일 | 2026-10-23 | 0 / 0 |
 | css-box-model | [CSS 박스 모델·box-sizing](../notes/css/box-model-and-box-sizing.md) | 2026-10-22 두 기준 자기 설명·margin 변형 예측. 최종 계산 일반화 피드백 후 자기 설명·지연 유지 미확인 | — | — | 1일 | 2026-10-23 | 0 / 0 |
+| react-race-abort | [비동기 경쟁 상태와 요청 취소](../notes/react/race-conditions-and-cancellation.md) | 2026-11-03 상태 불일치 원인, ignore 스코프 격리·한계, AbortController와 AbortError 분기 이유 자기 정리 | — | — | 1일 | 2026-11-04 | 0 / 0 |
 
 ## 확인할 오개념
 
@@ -30,6 +31,7 @@
 | http-fetch | 500을 통신 실패로 보는 이해 교정, json()의 본문 읽기와 JSON 텍스트 → JavaScript 값 구분 보완 | 미평가 | HTTP 상태와 Promise 거부, 두 await의 대기 대상·본문 소비 확인 |
 | ts-narrowing | JS 동적 타입과 TS 추론 혼동 보완. 최종 좁히기 목적은 값 차단보다 위치별 타입 판단·안전한 연산이라는 피드백 제공 | 미평가 | return 유무에 따른 타입 판단, 조건 분기와 타입 좁히기 구분. 용어 재설명을 기억 실패로 단정하지 않음 |
 | css-box-model | content-box와 border-box 초기 혼동 교정. 최종 모든 영역 두 배 계산은 좌우 값 합·포함 범위·CSS width 구분으로 보완 | 미평가 | 서로 다른 좌우 값과 margin에서 계산 기준을 배운 범위로 재확인 |
+| react-race-abort | ignore 플래그의 스코프 공유 여부 질문, useEffect 내 async 직접 사용·연산자 오타 피드백 보완 | 미평가 | 렉시컬 스코프 격리, 의도된 취소와 진짜 에러 구분, AbortError 분기 이유 지연 인출 확인 |
 
 기존 진단 답변을 정식 복습 점수로 소급 집계하지 않았다. 위 주제는 다음 복습 요청 시 기존 학습 범위 안에서 확인할 수 있다. 첫 유효 복습에서 3점이면 3일, 2점이면 1일, 0·1점이면 교정 후 1일을 시작 간격으로 사용한다.
 
